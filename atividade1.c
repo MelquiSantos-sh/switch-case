@@ -3,16 +3,16 @@
 
 int main(){
            //entrada de dados 
-char categoria;
+    char categoria;
           // declaraçao de variaveis 
 
-printf("Digite uma a letra da categoria para encontramos o veiculo que e permitido dirigir.\n");
-printf("Digite apenas a letra corespondente a categoria.\n");
+    printf("Digite uma a letra da categoria para encontramos o veiculo que e permitido dirigir.\n");
+    printf("Digite apenas a letra corespondente a categoria.\n");
     scanf("%c",&categoria);
-categoria = toupper(categoria); // converte para maiúscula
-switch (categoria)    
+    categoria = toupper(categoria); // converte para maiúscula
+    switch (categoria)    
         // processamento
-{
+    {
 
     case 'A':
               printf("Moto.\n");
@@ -35,7 +35,7 @@ switch (categoria)
              printf("Essa letra nao coresponde a nenhuma categoria!\n");
              printf("Você pode nao pode dirigir!!!");
     
-}
+    }
 
 
 
