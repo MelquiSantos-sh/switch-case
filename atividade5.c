@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-int main(){
-    float valor_produto,valor_final,diferenca,parcela;
-    int opcao,parcelas = 1;
+int main()
+{
+    float valor_produto, valor_final, diferenca, parcela;
+    int opcao, parcelas = 1;
 
     printf("Digite o valor total da compra:\n");
     scanf("%f", &valor_produto);
-
 
     printf("Escolha a forma de pagamento:\n");
     printf("1 - A vista (15%% de desconto)\n");
@@ -18,29 +18,28 @@ int main(){
 
     swith(opcao)
     {
-        case 1:
-            valor_final = valor_produto * 0.85;
-            break;
-        case 2:
-            valor_final = valor_produto * 0.90;
-            break;
-        case 3:
-            valor_final = valor_produto * 0.95;
-            parcelas = 3;
-            break;
-        case 4:
-            valor_final = valor_produto;
-            parcelas = 6;
-            break;
-        case 5:
-            valor_final = valor_produto * 1.08;
-            parcelas = 12;
-            break;
+    case 1:
+        valor_final = valor_produto * 0.85;
+        break;
+    case 2:
+        valor_final = valor_produto * 0.90;
+        break;
+    case 3:
+        valor_final = valor_produto * 0.95;
+        parcelas = 3;
+        break;
+    case 4:
+        valor_final = valor_produto;
+        parcelas = 6;
+        break;
+    case 5:
+        valor_final = valor_produto * 1.08;
+        parcelas = 12;
+        break;
 
-        default:
-            printf("Opcao invalida!\n");  
-            return 0;
-              
+    default:
+        printf("Opcao invalida!\n");
+        return 0;
     }
     diferenca = valor_final - valor_produto;
 
