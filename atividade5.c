@@ -16,7 +16,7 @@ int main()
     printf("5 - 12x (8%% de juros )\n");
     scanf("%d", &opcao);
 
-    swith(opcao)
+    switch(opcao)
     {
     case 1:
         valor_final = valor_produto * 0.85;
